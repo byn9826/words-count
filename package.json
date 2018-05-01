@@ -1,0 +1,14 @@
+{
+  "name": "global-words-split",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./src/globalWordsSplit.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2"
+  }
+}
