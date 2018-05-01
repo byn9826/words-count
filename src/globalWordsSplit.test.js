@@ -1,14 +1,18 @@
 var wordsSplit = require('./globalWordsSplit.js');
 var expect = require('chai').expect;
 
-describe('English Basic', function() {
-  it('Hello World contains two words', function() {
+describe('Simple', function() {
+  it('English', function() {
     expect(wordsSplit('Hello World')).to.deep.equal(['Hello', 'World']);
+  });
+  it('Chinese', function() {
+    expect(wordsSplit('你好，世界')).to.deep.equal(['你', '好', '世', '界']);
   });
 });
 
-describe('中文基本', function() {
-  it('你好，世界 有四个单词', function() {
-    expect(wordsSplit('你好，世界')).to.deep.equal(['你', '好', '世', '界']);
+describe('Basic', function() {
+  it('English', function() {
+    const content = "Google's free service instantly translates words, phrases, and web pages between English and over 100 other languages.";
+    expect(wordsSplit(content).length).to.equal(17);
   });
 });

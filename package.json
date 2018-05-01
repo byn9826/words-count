@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./src/globalWordsSplit.test.js"
+    "test": "mocha ./src/globalWordsSplit.test.js",
+    "report": "mocha ./src/globalWordsSplit.test.js --reporter mochawesome --reporter-options reportDir=docs,reportFilename=index"
   },
   "author": "Baozier",
   "license": "MIT",

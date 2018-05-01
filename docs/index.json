@@ -1,0 +1,135 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-05-01T02:22:21.428Z",
+    "end": "2018-05-01T02:22:21.449Z",
+    "duration": 21,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "861ea300-08d0-4777-9f16-44e7e2ca8f19",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "7244aab4-bb3b-47ee-88c9-8af35cc23dc9",
+        "title": "Simple",
+        "fullFile": "/var/www/global-words-split/src/globalWordsSplit.test.js",
+        "file": "/src/globalWordsSplit.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "English",
+            "fullTitle": "Simple English",
+            "timedOut": false,
+            "duration": 3,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(wordsSplit('Hello World')).to.deep.equal(['Hello', 'World']);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "0338d6ff-22e7-45a3-9932-026a7a8a23f0",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Chinese",
+            "fullTitle": "Simple Chinese",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(wordsSplit('你好，世界')).to.deep.equal(['你', '好', '世', '界']);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "0febba38-8a00-40ec-aec2-489fc578841d",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "0338d6ff-22e7-45a3-9932-026a7a8a23f0",
+          "0febba38-8a00-40ec-aec2-489fc578841d"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 3,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "4ee6e818-59ad-4348-afab-c7d9c2fea052",
+        "title": "Basic",
+        "fullFile": "/var/www/global-words-split/src/globalWordsSplit.test.js",
+        "file": "/src/globalWordsSplit.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "English",
+            "fullTitle": "Basic English",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const content = \"Google's free service instantly translates words, phrases, and web pages between English and over 100 other languages.\";\nexpect(wordsSplit(content).length).to.equal(17);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "4130a17c-c382-47cc-9b88-f5ebdc26b075",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "4130a17c-c382-47cc-9b88-f5ebdc26b075"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
