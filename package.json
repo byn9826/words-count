@@ -1,0 +1,15 @@
+{
+  "name": "global-words-split",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./src/globalWordsSplit.test.js"
+  },
+  "author": "Baozier",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1"
+  }
+}
