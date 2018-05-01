@@ -1,14 +1,16 @@
 {
   "name": "global-words-split",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./src/globalWordsSplit.test.js"
+    "test": "mocha ./src/globalWordsSplit.test.js",
+    "report": "mocha ./src/globalWordsSplit.test.js --reporter mochawesome --reporter-options reportDir=docs,reportFilename=index"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Baozier",
+  "license": "MIT",
+  "description": "",
   "devDependencies": {
-    "chai": "^4.1.2"
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1"
   }
 }

@@ -1,0 +1,3 @@
+Support Languages
+--
+English, Chinese
