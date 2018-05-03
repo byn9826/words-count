@@ -3,10 +3,13 @@ var expect = require('chai').expect;
 
 describe('Simple', function() {
   it('English', function() {
-    expect(wordsSplit('Hello World')).to.deep.equal(['Hello', 'World']);
+    expect(wordsSplit('Hello World').length).to.equal(2);
   });
   it('Chinese', function() {
-    expect(wordsSplit('你好，世界')).to.deep.equal(['你', '好', '世', '界']);
+    expect(wordsSplit('你好，世界').length).to.equal(4);
+  });
+  it('English-Chinese', function() {
+    expect(wordsSplit('Hello, 你好。').length).to.equal(3);
   });
 });
 

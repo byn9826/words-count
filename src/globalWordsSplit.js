@@ -4,6 +4,15 @@ function globalWordsSplit(text) {
 	}
 	//Format white space character
 	let words = text.replace(/\s+/, ' ');
+	//Remove normal punctuations
+	const punctuations = [
+		',', '，', '.', '。', ':', '：', ';', '；', '[', ']', '【', ']', '】', '{', '｛', '}', '｝',
+		'(', '（', ')', '）', '<', '《', '>', '》', '$', '￥', '!', '！', '?', '？', '~', '～',
+		'=', '+', '-', '*', '/', '\\', '&', '%', '@', '#', '^',
+	];
+	punctuations.forEach(function(punctuation) {
+		words = words.replace(punctuation, '');	
+	});
 	//Remove all kind of symbols
 	words = words.replace(/[\uff00-\uffef\u2000-\u206F]/g, '').trim();
 	//Split words by white space (For European languages)
