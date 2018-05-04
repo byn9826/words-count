@@ -1,17 +1,27 @@
 {
   "name": "global-words-split",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
+  "main": "./src/globalWordsSplit.js",
   "scripts": {
     "test": "mocha ./src/globalWordsSplit.test.js",
     "report": "mocha ./src/globalWordsSplit.test.js --reporter mochawesome --reporter-options reportDir=docs,reportFilename=index"
   },
   "author": "Baozier",
+  "email": "byn9826@gmail.com",
   "license": "MIT",
-  "description": "",
+  "description": "Words count for multi-languages paragraph mixed with numbers and punctuations",
+  "url": "https://byn9826.github.io/global-words-split/",
+  "homepage": "https://github.com/byn9826/global-words-split/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/byn9826/global-words-split"
+  },
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.1.1",
     "mochawesome": "^3.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/byn9826/global-words-split/issues"
   }
 }
