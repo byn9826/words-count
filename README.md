@@ -1,12 +1,11 @@
-# Global Words Split
+# Global Words Count
 Words count for multi-languages paragraph mixed with numbers and punctuations  
   
 Test Case
 --
 <b>Original Content:</b>Google's free service instantly translates words, phrases, and web pages between English and over 100 other languages.  
 <b>Basic Test Content:</b>Use Google Translate to translate original content into target language  
-<b>Criteria</b>+-1 words after punctuations removed -> Office Word words count  
-<b>Tested</b>English, Chinese  
+<b>Tested</b>English, Chinese, Japanese
   
 Reference
 --
