@@ -15,9 +15,18 @@ Office Word -> 12
 
 Test Case
 --
-<b>Original Content:</b>Google's free service instantly translates words, phrases, and web pages between English and over 100 other languages.  
-<b>Basic Test Content:</b>Translate original content into target language by Google Translate  
-<b>Test Case Coverage:</b>English, Chinese, Japanese, Korean, French, German, Italian, Spanish, Portuguese, Russian, Ukrainian, Arabic, Hebrew
+<b>Original Content:</b>  
+Google's free service instantly translates words, phrases, and web pages between English and over 100 other languages.  
+<b>Basic Test Content:</b>  
+Translate original content into target language by Google Translate. Will allow +-1 words in some case.  
+<b>Test Case Coverage:</b>  
+English, Chinese, Chinese-Traditional, Japanese, Korean, French,  
+German, Italian, Spanish, Portuguese, Russian, Ukrainian, Arabic,  
+Hebrew, Afrikaans, Albanian, Amharic, Armenian, Azerbaijani,  
+Basque, Belarusian, Bengali, Bulgarian, Croatian, Czech, Danish,  
+Dutch, Filipino, Finnish, Greek, Hindi, Hungarian, Icelandic,  
+Indonesian, Irish, Latin, Latvian, Lithuanian, Nepali, Norwegian,  
+Polish, Romanian, Serbian, Slovenian, Swedish, Turkish, Welsh, Zulu  
   
 Reference
 --
