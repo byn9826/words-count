@@ -10,17 +10,17 @@ var wordsSplit = require('global-words-split');
 var countResult = wordsSplit('Hello World').length;  
 ```
   
-Why use it
+Why use this
 --
-words_to_be_count = "Let's say ‘你好’ 100 times per day, 勤勉";  
-globalWordsSplit.js -> 10  
+words_to_be_count = 'Hello “世界”';  
+globalWordsSplit.js -> 3  
   
-words_to_be_count.length -> 36  
-words_to_be_count.split(' ').length -> 8  
-Countable.js -> 8  
-PHP str_word_count(words_to_be_count) -> 5  
-PHP mb_strlen(words_to_be_count) -> 36  
-Office Word -> 12  
+words_to_be_count.length -> 10  
+words_to_be_count.split(' ').length -> 2  
+Countable.js -> 2  
+PHP str_word_count(words_to_be_count) -> 1  
+PHP mb_strlen(words_to_be_count) -> 10  
+Office Word -> 5  
 
 Test Case
 --

@@ -43,7 +43,7 @@ describe('Basic', function() {
   });
   it('German', function() {
     const content = "Der kostenlose Google-Dienst übersetzt Wörter, Sätze und Webseiten sofort in Englisch und über 100 andere Sprachen.";
-    expect(wordsSplit(content).length).to.equal(16);
+    expect(wordsSplit(content).length).to.equal(17);
   });
   it('Italian', function() {
     const content = "Il servizio gratuito di Google traduce istantaneamente parole, frasi e pagine Web tra l'inglese e oltre 100 altre lingue.";
@@ -91,11 +91,11 @@ describe('Basic', function() {
   });
   it('Azerbaijani', function() {
     const content = "Google-un pulsuz xidməti İngilis dili ilə 100-dən çox digər dillər arasında sözləri, sözləri və veb səhifələrini dərhal tərcümə edir.";
-    expect(wordsSplit(content).length).to.equal(20);
+    expect(wordsSplit(content).length).to.equal(21);
   });
   it('Basque', function() {
     const content = "Google-ren doako zerbitzua ingelesez eta beste 100 hizkuntzatan baino gehiagotan hitzak, esaldiak eta web orriak itzultzen ditu instantan.";
-    expect(wordsSplit(content).length).to.equal(18);
+    expect(wordsSplit(content).length).to.equal(19);
   });
   it('Belarusian', function() {
     const content = "Бясплатны сэрвіс Google імгненна перакладае словы, фразы і вэб-старонак паміж ангельскай і больш за 100 іншых моў.";
@@ -127,7 +127,7 @@ describe('Basic', function() {
   });
   it('Filipino', function() {
     const content = "Ang libreng serbisyo ng Google ay agad na nagta-translate ng mga salita, parirala, at mga web page sa pagitan ng Ingles at mahigit sa 100 iba pang mga wika.";
-    expect(wordsSplit(content).length).to.equal(29);
+    expect(wordsSplit(content).length).to.equal(30);
   });
   it('Finnish', function() {
     const content = "Googlen ilmainen palvelu kääntää hetkessä sanat, lauseet ja verkkosivut englannin ja yli 100 muulla kielellä.";
@@ -207,7 +207,7 @@ describe('Basic', function() {
   });
   it('Zulu', function() {
     const content = "Insizakalo yamahhala yakwa-Google ishintsha ngokushesha amagama, imishwana, namakhasi ewebhu phakathi kweNgisi kanye nezinye izilimi ezingu-100.";
-    expect(wordsSplit(content).length).to.equal(16);
+    expect(wordsSplit(content).length).to.equal(17);
   });
   
 }); 
