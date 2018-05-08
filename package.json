@@ -1,10 +1,10 @@
 {
   "name": "words-count",
   "version": "1.0.1",
-  "main": "./src/globalWordsSplit.js",
+  "main": "./src/globalWordsCount.js",
   "scripts": {
-    "test": "mocha ./src/globalWordsSplit.test.js",
-    "report": "mocha ./src/globalWordsSplit.test.js --reporter mochawesome --reporter-options reportDir=docs,reportFilename=index"
+    "test": "mocha ./src/globalWordsCount.test.js",
+    "report": "mocha ./src/globalWordsCount.test.js --reporter mochawesome --reporter-options reportDir=docs,reportFilename=index"
   },
   "author": "Baozier",
   "email": "byn9826@gmail.com",
