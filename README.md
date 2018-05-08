@@ -1,6 +1,7 @@
 # Global Words Count
-Words count for multi-languages paragraph mixed with numbers and punctuations. One rule apply to all.  
-
+Words count for multi-languages paragraph mixed with numbers and punctuations.   
+One rule apply to all.  
+  
 [See Test Case](https://byn9826.github.io/global-words-split/)  
   
 Example
@@ -36,6 +37,8 @@ Basque, Belarusian, Bengali, Bulgarian, Croatian, Czech, Danish,
 Dutch, Filipino, Finnish, Greek, Hindi, Hungarian, Icelandic,  
 Indonesian, Irish, Latin, Latvian, Lithuanian, Nepali, Norwegian,  
 Polish, Romanian, Serbian, Slovenian, Swedish, Turkish, Welsh, Zulu  
+<b>Failed Test Case:</b>
+Hawalian  
   
 Reference
 --

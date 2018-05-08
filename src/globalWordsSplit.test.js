@@ -109,9 +109,29 @@ describe('Basic', function() {
     const content = "Безплатната услуга на Google незабавно превежда думи, фрази и уеб страници между английски и над 100 други езици.";
     expect(wordsSplit(content).length).to.equal(18);
   });
+  it('Bosnian', function() {
+    const content = "Google-ova besplatna usluga trenutno prevodi riječi, fraze i web stranice između engleskog i preko 100 drugih jezika.";
+    expect(wordsSplit(content).length).to.equal(18);
+  });
+  it('Catalan', function() {
+    const content = "El servei gratuït de Google tradueix de manera instantània paraules, frases i pàgines web entre l'anglès i més de 100 idiomes.";
+    expect(wordsSplit(content).length).to.equal(21);
+  });
+  it('Cebuano', function() {
+    const content = "Ang libreng serbisyo sa Google diha-diha dayon naghubad sa mga pulong, hugpong sa mga pulong, ug mga panid sa web tali sa Iningles ug kapin sa 100 ka lain nga mga pinulongan.";
+    expect(wordsSplit(content).length).to.equal(33);
+  });
   it('Croatian', function() {
     const content = "Googleova besplatna usluga trenutačno prevodi riječi, fraze i web stranice između engleskog jezika i preko 100 drugih jezika.";
     expect(wordsSplit(content).length).to.equal(18);
+  });
+  it('Chichewa', function() {
+    const content = "Utumiki waulere wa Google nthawi yomweyo amatanthauzira mawu, mawu, ndi masamba a pakati pa Chingerezi ndi zinenero zina zoposa 100.";
+    expect(wordsSplit(content).length).to.equal(20);
+  });
+  it('Corsican', function() {
+    const content = "U serviziu di Google gratuituamente traduce parole, parole è pagine web entre inglesu è più di 100 altre lingue.";
+    expect(wordsSplit(content).length).to.equal(19);
   });
   it('Czech', function() {
     const content = "Bezplatná služba Google okamžitě přeloží slova, fráze a webové stránky mezi angličtinu a více než 100 dalších jazyků.";
@@ -125,6 +145,14 @@ describe('Basic', function() {
     const content = "De gratis service van Google vertaalt woorden, zinnen en webpagina's onmiddellijk tussen Engels en meer dan 100 andere talen.";
     expect(wordsSplit(content).length).to.equal(19);
   });
+  it('Esperanto', function() {
+    const content = "La libera servo de Google tuj tradukas vortojn, frazojn kaj retpaĝojn inter la angla kaj pli ol 100 aliaj lingvoj.";
+    expect(wordsSplit(content).length).to.equal(20);
+  });
+  it('Estonian', function() {
+    const content = "Google'i tasuta teenus koheselt tõlgib sõnu, fraase ja veebilehti inglise keele ja üle 100 muu keele vahel.";
+    expect(wordsSplit(content).length).to.equal(17);
+  });
   it('Filipino', function() {
     const content = "Ang libreng serbisyo ng Google ay agad na nagta-translate ng mga salita, parirala, at mga web page sa pagitan ng Ingles at mahigit sa 100 iba pang mga wika.";
     expect(wordsSplit(content).length).to.equal(30);
@@ -133,13 +161,41 @@ describe('Basic', function() {
     const content = "Googlen ilmainen palvelu kääntää hetkessä sanat, lauseet ja verkkosivut englannin ja yli 100 muulla kielellä.";
     expect(wordsSplit(content).length).to.equal(15);
   });
+  it('Frisian', function() {
+    const content = "De frije tsjinst fan Google ferwiist fuortendaliks wurden, wurden, en websiden tusken Ingelsk en mear as 100 oare talen.";
+    expect(wordsSplit(content).length).to.equal(19);
+  });
   it('Greek', function() {
     const content = "Η δωρεάν υπηρεσία της Google μεταφράζει άμεσα λέξεις, φράσεις και ιστοσελίδες μεταξύ αγγλικών και πάνω από 100 άλλες γλώσσες.";
     expect(wordsSplit(content).length).to.equal(19);
   });
+  it('Galician', function() {
+    const content = "O servizo gratuíto de Google traduce instantáneamente palabras, frases e páxinas web entre inglés e máis de 100 idiomas.";
+    expect(wordsSplit(content).length).to.equal(19);
+  });
+  it('Georgian', function() {
+    const content = "Google- ის უფასო სერვისი მყისიერად თარგმნის სიტყვებს, ფრაზებსა და ვებ გვერდებს ინგლისურ ენასა და 100-ზე მეტ ენაზე.";
+    expect(wordsSplit(content).length).to.equal(17);
+  });
+  it('Gujarati', function() {
+    const content = "Google ની મફત સેવા અંગ્રેજી અને 100 અન્ય ભાષાઓમાંના શબ્દો, શબ્દસમૂહો અને વેબ પૃષ્ઠોને તરત અનુવાદિત કરે છે.";
+    expect(wordsSplit(content).length).to.equal(18);
+  });
+  it('Haitian Creole', function() {
+    const content = "Sèvis gratis Google la imedyatman tradui mo, fraz, ak paj entènèt ant angle ak plis pase 100 lòt lang.";
+    expect(wordsSplit(content).length).to.equal(19);
+  });
+  it('Hausa', function() {
+    const content = "Sabis na kyauta na Google nan take fassara kalmomi, kalmomi, da kuma shafukan intanet tsakanin Ingilishi da fiye da 100 sauran harsuna.";
+    expect(wordsSplit(content).length).to.equal(22);
+  });
   it('Hindi', function() {
     const content = "Google की नि: शुल्क सेवा तुरंत अंग्रेजी और 100 से अधिक अन्य भाषाओं के बीच शब्दों, वाक्यांशों और वेब पृष्ठों का अनुवाद करती है।";
     expect(wordsSplit(content).length).to.equal(24);
+  });
+  it('Hmong', function() {
+    const content = "Google txoj kev pab dawb yog txhais cov lus, nqe lus, thiab cov nplooj ntawv web ntawm lus Askiv thiab tshaj 100 lwm yam lus.";
+    expect(wordsSplit(content).length).to.equal(25);
   });
   it('Hungarian', function() {
     const content = "A Google ingyenes szolgáltatása azonnal fordít szavakat, kifejezéseket és weboldalakat angol és több mint 100 nyelven.";
@@ -148,6 +204,10 @@ describe('Basic', function() {
   it('Icelandic', function() {
     const content = "Ókeypis þjónustu Google er þegar í stað þýtt orð, orðasambönd og vefsíður á milli ensku og yfir 100 önnur tungumál.";
     expect(wordsSplit(content).length).to.equal(20);
+  });
+  it('Igbo', function() {
+    const content = "Ọrụ n'efu nke Google na-asụgharị okwu, ahịrịokwu, na ibe weebụ n'otu ntabi anya n'etiti English na karịa 100 asụsụ ndị ọzọ.";
+    expect(wordsSplit(content).length).to.equal(22);
   });
   it('Indonesian', function() {
     const content = "Layanan gratis Google dengan cepat menerjemahkan kata, frasa, dan halaman web antara bahasa Inggris dan lebih dari 100 bahasa lainnya.";

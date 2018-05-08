@@ -1,6 +1,6 @@
 {
   "name": "global-words-split",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./src/globalWordsSplit.js",
   "scripts": {
     "test": "mocha ./src/globalWordsSplit.test.js",
