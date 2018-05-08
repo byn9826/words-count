@@ -1,6 +1,6 @@
 {
-  "name": "global-words-split",
-  "version": "1.0.2",
+  "name": "words-count",
+  "version": "1.0.1",
   "main": "./src/globalWordsSplit.js",
   "scripts": {
     "test": "mocha ./src/globalWordsSplit.test.js",
@@ -10,11 +10,11 @@
   "email": "byn9826@gmail.com",
   "license": "MIT",
   "description": "Words count for multi-languages paragraph mixed with numbers and punctuations",
-  "url": "https://byn9826.github.io/global-words-split/",
-  "homepage": "https://github.com/byn9826/global-words-split/blob/master/README.md",
+  "url": "https://github.com/byn9826/words-count",
+  "homepage": "https://github.com/byn9826/words-count/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/byn9826/global-words-split"
+    "url": "https://github.com/byn9826/words-count"
   },
   "devDependencies": {
     "chai": "^4.1.2",
@@ -22,6 +22,6 @@
     "mochawesome": "^3.0.2"
   },
   "bugs": {
-    "url": "https://github.com/byn9826/global-words-split/issues"
+    "url": "https://github.com/byn9826/words-count/issues"
   }
 }

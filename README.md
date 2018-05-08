@@ -1,20 +1,20 @@
-# Global Words Count
+# Words Count
 Words count for multi-languages paragraph mixed with numbers and punctuations.   
 One rule apply to all.  
   
-[See Test Case](https://byn9826.github.io/global-words-split/)  
+[See Test Case](https://byn9826.github.io/words-count/)  
   
 Example
 --
 ```
-var wordsSplit = require('global-words-split');  
-var countResult = wordsSplit('Hello World').length;  
+var wordsCount = require('words-count');  
+var countResult = wordsCount('Hello World');  
 ```
   
 Why use this
 --
 words_to_be_count = 'Hello “世界”';  
-globalWordsSplit.js -> 3  
+words-count.js -> 3  
   
 words_to_be_count.length -> 10  
 words_to_be_count.split(' ').length -> 2  

@@ -43,7 +43,7 @@ function globalWordsSplit(text) {
 		}
 		carry.length === 0 ? final.push(word) : final = final.concat(carry);
 	});
-	return final;
+	return final.length;
 }
 
 module.exports = globalWordsSplit;
