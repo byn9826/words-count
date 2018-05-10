@@ -313,5 +313,14 @@ describe('Basic', function() {
     const content = "Ko te ratonga koreutu a Google ka whakawhiti i nga kupu, nga kupu, me nga whārangi tukutuku i waenga i te reo Ingarihi me te 100 atu reo.";
     expect(wordsCount(content)).to.equal(28);
   });
+  it('Marathi', function() {
+    const content = "Google ची विनामूल्य सेवा इंग्रजी आणि 100 अन्य भाषांमधील शब्द, वाक्यांश आणि वेब पृष्ठे झटकन अनुवादित करते.";
+    expect(wordsCount(content)).to.equal(17);
+  });
+  it('Mongolian', function() {
+    const content = "Google-ийн үнэгүй үйлчилгээ нь англиар болон 100 гаруй хэлнүүдийн хооронд үг, хэллэг, вэб хуудсыг даруй орчуулдаг.";
+    expect(wordsCount(content)).to.equal(17);
+  });
+  
   
 }); 

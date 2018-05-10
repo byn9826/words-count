@@ -50,9 +50,9 @@ Translate original content into target language by Google Translate.
   Igbo, Indonesian, Irish, Javanese, Kannada, Kazakh, Kurdish, Kyrgyz, Latin,  
   Latvian, Lithuanian, Luxembourgish, Macedonian, Malagasy, Malay, Malayalam,  
   Nepali, Norwegian, Polish, Romanian, Serbian, Slovenian, Swedish, Turkish, Welsh  
-  Zulu   
+  Zulu, Maori, Marathi, Mongolian    
 <b>Failed/Unknown:</b>
-Hawalian, Khmer, Lao  
+Hawalian, Khmer, Lao, Maltese, Myanmar  
   
 Reference
 --
