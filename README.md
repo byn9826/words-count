@@ -14,7 +14,7 @@ Example
 --
 ```
 var wordsCount = require('words-count');  
-var countResult = wordsCount('Hello World');  
+console.log(wordsCount('Hello World'));  
 ```
   
 Why use this
@@ -39,19 +39,23 @@ Test Case
 <b>Original Content:</b>  
 Google's free service instantly translates words, phrases, and web pages between English and over 100 other languages.  
 <b>Basic Test Content:</b>  
-Translate original content into target language by Google Translate. Will allow +-1 words in some case.  
+Translate original content into target language by Google Translate.  
 <b>Test Case Coverage:</b>  
-English, Chinese, Chinese-Traditional, Japanese, Korean, French,  
-German, Italian, Spanish, Portuguese, Russian, Ukrainian, Arabic,  
-Hebrew, Afrikaans, Albanian, Amharic, Armenian, Azerbaijani,  
-Basque, Belarusian, Bengali, Bulgarian, Croatian, Czech, Danish,  
-Dutch, Filipino, Finnish, Greek, Hindi, Hungarian, Icelandic,  
-Indonesian, Irish, Latin, Latvian, Lithuanian, Nepali, Norwegian,  
-Polish, Romanian, Serbian, Slovenian, Swedish, Turkish, Welsh, Zulu  
-<b>Failed/Unknown Test Case:</b>
+  English, Chinese, Chinese-Traditional, Japanese, Korean, French,  German,  
+  Italian, Spanish, Portuguese, Russian, Ukrainian, Arabic, Hebrew, Afrikaans,  
+  Albanian, Amharic, Armenian, Azerbaijani, Basque, Belarusian, Bengali,  
+  Bulgarian, Bosnian, Catalan, Cebuano, Croatian, Chichewa, Corsican, Czech,  
+  Danish, Dutch, Esperanto, Estonian, Filipino, Finnish, Frisian, Greek, Galician,  
+  Georgian, Gujarati, Haitian Creole, Hausa, Hindi, Hmong, Hungarian, Icelandic,  
+  Igbo, Indonesian, Irish, Javanese, Kannada, Kazakh, Kurdish, Kyrgyz, Latin,  
+  Latvian, Lithuanian, Luxembourgish, Macedonian, Malagasy, Malay, Malayalam,  
+  Nepali, Norwegian, Polish, Romanian, Serbian, Slovenian, Swedish, Turkish, Welsh  
+  Zulu   
+<b>Failed/Unknown:</b>
 Hawalian, Khmer, Lao  
   
 Reference
 --
 http://php.net/manual/en/function.str-word-count.php#109733  
 https://www.key-shortcut.com/en/writing-systems/%E6%96%87%E5%AD%97-chinese-cjk/cjk-characters-1/
+http://jrgraphix.net/r/Unicode/0D00-0D7F

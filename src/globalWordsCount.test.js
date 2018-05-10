@@ -253,6 +253,22 @@ describe('Basic', function() {
     const content = 'De fräien Service vu Google gëtt direkt Iwwersetzungen, Wierder, an Websäiten tëschent Englesch an iwwer 100 anere Sproochen iwwersetzt.';
     expect(wordsCount(content)).to.equal(19);
   });
+  it('Macedonian', function() {
+    const content = 'Бесплатната услуга на Google веднаш преведува зборови, фрази и веб-страници помеѓу англиски и повеќе од 100 други јазици.';
+    expect(wordsCount(content)).to.equal(19);
+  });
+  it('Malagasy', function() {
+    const content = "Ny tolotrasa maimaim-poana ao Google dia avy hatrany dia mandika teny, andian-teny, ary tranonkala misy eo amin'ny teny anglisy sy fiteny 100 mahery.";
+    expect(wordsCount(content)).to.equal(25);
+  });
+  it('Malay', function() {
+    const content = "Perkhidmatan percuma Google serta menterjemahkan kata-kata, frasa, dan laman web antara bahasa Inggeris dan lebih dari 100 bahasa lain.";
+    expect(wordsCount(content)).to.equal(20);
+  });
+  it('Malayalam', function() {
+    const content = "ഇംഗ്ലീഷിലും കൂടാതെ 100-ലധികം ഭാഷകളിലുമുള്ള വാക്കുകളും വാചകങ്ങളും വെബ് പേജുകളും Google ൻറെ സൌജന്യ സേവനം തൽക്ഷണം വിവർത്തനം ചെയ്യുന്നു.";
+    expect(wordsCount(content)).to.equal(16);
+  });
   it('Nepali', function() {
     const content = "Google को नि: शुल्क सेवाले अंग्रेजी र 100 भन्दा बढी अन्य भाषाहरू बीचको शब्दहरू, वाक्यांशहरू, र वेब पृष्ठहरू तुरुन्तै अनुवाद गर्दछ।";
     expect(wordsCount(content)).to.equal(21);
