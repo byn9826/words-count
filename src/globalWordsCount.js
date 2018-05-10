@@ -19,8 +19,8 @@ function globalWordsSplit(text) {
 	//Split words by white space (For European languages)
 	words = words.split(' ');
 	
-	//Match latin letters and numbers
-	const common = "(\\d+)|[a-zA-Z\u00C0-\u00FF\u0100-\u017F\u0180-\u024F\u0250-\u02AF\u1E00-\u1EFF]+|";
+	//Match latin, cyrillic letters and numbers
+	const common = "(\\d+)|[a-zA-Z\u00C0-\u00FF\u0100-\u017F\u0180-\u024F\u0250-\u02AF\u1E00-\u1EFF\u0400-\u04FF\u0500-\u052F]+|";
 	//Match Chinese Hànzì, the Japanese Kanji and the Korean Hanja
 	const cjk = "\u2E80-\u2EFF\u2F00-\u2FDF\u3000-\u303F\u31C0-\u31EF\u3200-\u32FF\u3300-\u33FF\u3400-\u3FFF\u4000-\u4DBF\u4E00-\u4FFF\u5000-\u5FFF\u6000-\u6FFF\u7000-\u7FFF\u8000-\u8FFF\u9000-\u9FFF\uF900-\uFAFF";
 	//Match Japanese Hiragana, Katakana, Rōmaji

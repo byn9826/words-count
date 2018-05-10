@@ -4,6 +4,12 @@ One rule apply to all.
   
 [See Test Case](https://byn9826.github.io/words-count/)  
   
+Install
+--
+```
+npm i words-count
+```
+
 Example
 --
 ```
@@ -23,6 +29,11 @@ PHP str_word_count(words_to_be_count) -> 1
 PHP mb_strlen(words_to_be_count) -> 10  
 Office Word -> 5  
 
+Special Rule
+--
+1. Numbers count as 1 word  
+2. Words connected by '-' count as 2 words  
+
 Test Case
 --
 <b>Original Content:</b>  
@@ -37,8 +48,8 @@ Basque, Belarusian, Bengali, Bulgarian, Croatian, Czech, Danish,
 Dutch, Filipino, Finnish, Greek, Hindi, Hungarian, Icelandic,  
 Indonesian, Irish, Latin, Latvian, Lithuanian, Nepali, Norwegian,  
 Polish, Romanian, Serbian, Slovenian, Swedish, Turkish, Welsh, Zulu  
-<b>Failed Test Case:</b>
-Hawalian  
+<b>Failed/Unknown Test Case:</b>
+Hawalian, Khmer, Lao  
   
 Reference
 --

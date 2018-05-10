@@ -59,11 +59,11 @@ describe('Basic', function() {
   });
   it('Russian', function() {
     const content = "Бесплатный сервис Google мгновенно переводит слова, фразы и веб-страницы между английским и более 100 другими языками.";
-    expect(wordsCount(content)).to.equal(16);
+    expect(wordsCount(content)).to.equal(17);
   });
   it('Ukrainian', function() {
     const content = "Безкоштовна служба Google миттєво перекладає слова, фрази та веб-сторінки між англійською мовою та більш ніж 100 іншими мовами.";
-    expect(wordsCount(content)).to.equal(18);
+    expect(wordsCount(content)).to.equal(19);
   });
   it('Arabic', function() {
     const content = "تعمل خدمة Google المجانية على الفور على ترجمة الكلمات والعبارات وصفحات الويب بين الإنجليزية وأكثر من 100 لغة أخرى.";
@@ -99,7 +99,7 @@ describe('Basic', function() {
   });
   it('Belarusian', function() {
     const content = "Бясплатны сэрвіс Google імгненна перакладае словы, фразы і вэб-старонак паміж ангельскай і больш за 100 іншых моў.";
-    expect(wordsCount(content)).to.equal(17);
+    expect(wordsCount(content)).to.equal(18);
   });
   it('Bengali', function() {
     const content = "Google এর বিনামূল্যের পরিষেবাটি ইংরেজী এবং আরো 100 টিরও বেশি ভাষার মধ্যে শব্দ, বাক্যাংশ এবং ওয়েব পৃষ্ঠাগুলিকে সঙ্গে সঙ্গে অনুবাদ করে।";
@@ -217,6 +217,26 @@ describe('Basic', function() {
     const content = "Aistríonn seirbhís saor in aisce Google láithreach focail, frásaí agus leathanaigh ghréasáin idir Béarla agus os cionn 100 teanga eile.";
     expect(wordsCount(content)).to.equal(20);
   });
+  it('Javanese', function() {
+    const content = "Layanan gratis Google langsung nerjemahake tembung, frase, lan kaca web antarane basa Inggris lan luwih saka 100 basa liyane.";
+    expect(wordsCount(content)).to.equal(19);
+  });
+  it('Kannada', function() {
+    const content = "Google ನ ಉಚಿತ ಸೇವೆಯು ಇಂಗ್ಲಿಷ್ ಮತ್ತು 100 ಕ್ಕಿಂತಲೂ ಹೆಚ್ಚಿನ ಭಾಷೆಗಳ ನಡುವೆ ಪದಗಳು, ಪದಗುಚ್ಛಗಳು ಮತ್ತು ವೆಬ್ ಪುಟಗಳನ್ನು ತಕ್ಷಣ ಭಾಷಾಂತರಿಸುತ್ತದೆ.";
+    expect(wordsCount(content)).to.equal(18);
+  });
+  it('Kazakh', function() {
+    const content = "Google-дің тегін қызметі ағылшын тілдері мен 100-ден астам басқа тілдердің арасындағы сөздерді, сөз тіркестерін және веб-беттерді жедел аударады.";
+    expect(wordsCount(content)).to.equal(21);
+  });
+  it('Kurdish', function() {
+    const content = "Gava xizmeta belaş ya Google yekser peyvan, navên û malperên di navbera Îngilîzî û ji 100 zimanên din de wergerandin.";
+    expect(wordsCount(content)).to.equal(20);
+  });
+  it('Kyrgyz', function() {
+    const content = "Google'дун акысыз кызмат заматта англис жана 100 башка тилде ортосундагы сөздөрдү, сөз айкаштарын, жана барактарды которот.";
+    expect(wordsCount(content)).to.equal(16);
+  });
   it('Latin', function() {
     const content = "Liberum servitium statim verba Googles ope apud translates: Phrases: et super C, et linguis Latina inter paginas.";
     expect(wordsCount(content)).to.equal(17);
@@ -227,6 +247,10 @@ describe('Basic', function() {
   });
   it('Lithuanian', function() {
     const content = '"Google" nemokama paslauga iš karto verčia žodžius, frazes ir tinklalapius iš anglų kalbos ir daugiau kaip 100 kitų kalbų.';
+    expect(wordsCount(content)).to.equal(19);
+  });
+  it('Luxembourgish', function() {
+    const content = 'De fräien Service vu Google gëtt direkt Iwwersetzungen, Wierder, an Websäiten tëschent Englesch an iwwer 100 anere Sproochen iwwersetzt.';
     expect(wordsCount(content)).to.equal(19);
   });
   it('Nepali', function() {
@@ -247,7 +271,7 @@ describe('Basic', function() {
   });
   it('Serbian', function() {
     const content = "Гоогле-ова бесплатна услуга тренутно преводи речи, фразе и веб странице између енглеског и преко 100 других језика.";
-    expect(wordsCount(content)).to.equal(17);
+    expect(wordsCount(content)).to.equal(18);
   });
   it('Slovenian', function() {
     const content = "Googlova brezplačna storitev takoj prevaja besede, besedne zveze in spletne strani med angleščino in več kot 100 drugimi jeziki.";
