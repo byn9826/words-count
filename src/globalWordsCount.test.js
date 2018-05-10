@@ -309,5 +309,9 @@ describe('Basic', function() {
     const content = "Insizakalo yamahhala yakwa-Google ishintsha ngokushesha amagama, imishwana, namakhasi ewebhu phakathi kweNgisi kanye nezinye izilimi ezingu-100.";
     expect(wordsCount(content)).to.equal(17);
   });
+  it('Maori', function() {
+    const content = "Ko te ratonga koreutu a Google ka whakawhiti i nga kupu, nga kupu, me nga whārangi tukutuku i waenga i te reo Ingarihi me te 100 atu reo.";
+    expect(wordsCount(content)).to.equal(28);
+  });
   
 }); 
