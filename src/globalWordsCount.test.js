@@ -321,6 +321,59 @@ describe('Basic', function() {
     const content = "Google-ийн үнэгүй үйлчилгээ нь англиар болон 100 гаруй хэлнүүдийн хооронд үг, хэллэг, вэб хуудсыг даруй орчуулдаг.";
     expect(wordsCount(content)).to.equal(17);
   });
-  
+  it('Pashto', function() {
+    const content = "د ګوګل وړیا خدمت په چټکه توګه د انګلستان او له 100 څخه زیاتو نورو ژبو تر منځ خبرې، جملې، او ویب پاڼې ژباړئ.";
+    expect(wordsCount(content)).to.equal(24);
+  });
+  it('Persian', function() {
+    const content = "سرویس رایگان گوگل فورا کلمات، عبارات و صفحات وب را بین انگلیسی ها و بیش از 100 زبان دیگر ترجمه می کند.";
+    expect(wordsCount(content)).to.equal(22);
+  });
+  it('Punjabi', function() {
+    const content = "Google ਦੀ ਮੁਫਤ ਸੇਵਾ ਅੰਗਰੇਜ਼ੀ, ਅਤੇ 100 ਤੋਂ ਵੱਧ ਹੋਰ ਭਾਸ਼ਾਵਾਂ ਦੇ ਵਿੱਚ ਸ਼ਬਦਾਂ, ਵਾਕਾਂਸ਼ ਅਤੇ ਵੈਬ ਪੇਜਜ਼ ਦਾ ਤੁਰੰਤ ਅਨੁਵਾਦ ਕਰਦੀ ਹੈ.";
+    expect(wordsCount(content)).to.equal(23);
+  });
+  it('Samoan', function() {
+    const content = "O le free service a Google na vave faaliliuina upu, fuaitau, ma itulau web i le va o le Igilisi ma le silia i le 100 isi gagana.";
+    expect(wordsCount(content)).to.equal(28);
+  });
+  it('Scots Gaelic', function() {
+    const content = "Bidh seirbheis an-asgaidh Ghoogle a 'ciallachadh faclan, abairtean agus duilleagan eadar Beurla agus còrr is 100 cànan eile.";
+    expect(wordsCount(content)).to.equal(19);
+  });
+  it('Sesotho', function() {
+    const content = "Tšebeletso ea mahala ea Google hang-hang e fetolela mantsoe, lipolelo le maqephe a maqephe pakeng tsa Senyesemane le lipuo tse ling tse fetang 100.";
+    expect(wordsCount(content)).to.equal(25);
+  });
+  it('Shona', function() {
+    const content = "Basa rebasa reGoogle rinobva rashandura mazwi, mitsara, nemapeji ewebhu pakati peChirungu nemamwe mitauro zana.";
+    expect(wordsCount(content)).to.equal(14);
+  });
+  it('Sindhi', function() {
+    const content = "گوگل جي مفت خدمت، انگريز ۽ مٿي 100 ٻين ٻولين جي وچ ۾ فوري طور لفظن، جملن، ۽ ويب صفحا.";
+    expect(wordsCount(content)).to.equal(20);
+  });
+  it('Sinhala', function() {
+    const content = "ගූගල්ගේ නොමිලේ සේවාව ක්ෂණිකව ඉංග්රීසි සහ වචන 100 කට වැඩි භාෂා ගණනකින් වචන, වාක්ය සහ වෙබ් පිටු පරිවර්තනය කරයි.";
+    expect(wordsCount(content)).to.equal(19);
+  });
+  it('Slovak', function() {
+    const content = "Bezplatná služba Google okamžite prekladá slová, frázy a webové stránky medzi angličtinu a viac ako 100 ďalších jazykov.";
+    expect(wordsCount(content)).to.equal(18);
+  });
+  it('Somali', function() {
+    const content = "Adeegga bilaashka ah ee Google ayaa si dhakhso ah u turjumaya ereyo, odhaaho, iyo bogag internet ah oo u dhaxeeya Ingiriisiga iyo in ka badan 100 luqadood oo kale.";
+    expect(wordsCount(content)).to.equal(29);
+  });
+  it('Sundanese', function() {
+    const content = "jasa bébas Google instan ditarjamahkeun kecap, frasa, jeung kaca ramat antara Inggris jeung leuwih 100 basa séjén.";
+    expect(wordsCount(content)).to.equal(17);
+  });
+  it('Swahili', function() {
+    const content = "Huduma ya bure ya Google mara moja hutafsiri maneno, misemo, na kurasa za wavuti kati ya Kiingereza na zaidi ya lugha 100.";
+    expect(wordsCount(content)).to.equal(22);
+  });
   
 }); 
+
+
