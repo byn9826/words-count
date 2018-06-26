@@ -373,6 +373,43 @@ describe('Basic', function() {
     const content = "Huduma ya bure ya Google mara moja hutafsiri maneno, misemo, na kurasa za wavuti kati ya Kiingereza na zaidi ya lugha 100.";
     expect(wordsCount(content)).to.equal(22);
   });
+  it('Tajik', function() {
+    const content = "Хизмати ройгони Google instantly калимаҳо, ибораҳо ва саҳифаҳои веб дар забони англисӣ ва зиёда аз 100 забонҳои дигарро тарҷума мекунад.";
+    expect(wordsCount(content)).to.equal(20);
+  });
+  it('Telugu', function() {
+    const content = "Google యొక్క ఉచిత సేవ పదాలు, పదబంధాలు మరియు వెబ్ పేజీలను ఇంగ్లీష్ మరియు 100 కంటే ఎక్కువ భాషల మధ్య తక్షణమే అనువదిస్తుంది.";
+    expect(wordsCount(content)).to.equal(18);
+  });
+  it('Turkish', function() {
+    const content = "Google'ın ücretsiz hizmeti, kelimeleri, kelime öbeklerini ve web sayfalarını İngilizce ve 100'den fazla başka dilde anında çevirir.";
+    expect(wordsCount(content)).to.equal(18);
+  });
+  it('Urdu', function() {
+    const content = "Google کی مفت سروس انگریزی اور 100 سے زائد دیگر زبانوں کے درمیان الفاظ، جملے، اور ویب صفحات کو فوری طور پر ترجمہ کرتا ہے.";
+    expect(wordsCount(content)).to.equal(25);
+  });
+  it('Uzbek', function() {
+    const content = "Google bepul xizmati ingliz va 100 dan ortiq boshqa tillardagi so'zlar, iboralar va veb-sahifalarni bir zumda tarjima qiladi.";
+    expect(wordsCount(content)).to.equal(19);
+  });
+  it('Vietnamese', function() {
+    const content = "Dịch vụ miễn phí của Google ngay lập tức dịch các từ, cụm từ và trang web giữa tiếng Anh và hơn 100 ngôn ngữ khác.";
+    expect(wordsCount(content)).to.equal(26);
+  });
+  it('Xhosa', function() {
+    const content = "Inkonzo yamahhala ye-Google iguqulela ngokukhawuleza amagama, amabinzana kunye namaphepha ewebhu phakathi kweesiNgesi kunye nezinye iilwimi ezili-100.";
+    expect(wordsCount(content)).to.equal(18);
+  });
+  it('Yiddish', function() {
+    const content = "דער גוגל'ס פריי דינען תנאים איבערזעצן ווערטער, פראַסעס און וועב זייטלעך צווישן ענגליש און איבער 100 אנדערע שפראכן.";
+    expect(wordsCount(content)).to.equal(18);
+  });
+  it('Yoruba', function() {
+    const content = "Iṣẹ ọfẹ ọfẹ ti Google lesekese tumọ ọrọ, gbolohun ọrọ, ati oju-iwe wẹẹbu laarin English ati ju 100 awọn ede miran lọ.";
+    expect(wordsCount(content)).to.equal(23);
+  });
+  
   
 }); 
 
