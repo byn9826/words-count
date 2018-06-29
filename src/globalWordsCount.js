@@ -28,12 +28,9 @@ function globalWordsSplit(text) {
 	const kr = "\u1100-\u11FF\u3130-\u318F\uA960-\uA97F\uAC00-\uAFFF\uB000-\uBFFF\uC000-\uCFFF\uD000-\uD7AF\uD7B0-\uD7FF";
 	
 	const reg = new RegExp(
-		common + "[" + 
-		cjk + jp + kr +
-		"]",
+		common + "[" + cjk + jp + kr + "]",
 		"g"
 	);
-	let final = [];
 	let total = 0;
 	words.forEach(function(word) {
 		let carry = 0;
