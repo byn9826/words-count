@@ -52,7 +52,7 @@ Translate original content into target language by Google Translate.
   Nepali, Norwegian, Polish, Romanian, Serbian, Slovenian, Swedish, Turkish, Welsh  
   Zulu, Maori, Marathi, Mongolian, Pashto, Persian, Punjabi, Scots Gaelic, Sesotho,  
   Shona, Sindhi, Sinhala, Slovak, Somali, Sundanese, Swahili, Tajik, Turkish,  
-  Urdu, uzbek, Vietnamese, Xhosa, Yiddish, Yoruba
+  Urdu, uzbek, Vietnamese, Xhosa, Yiddish, Yoruba  
 <b>Failed/Unknown:</b>
 Hawalian, Khmer, Lao, Maltese, Myanmar, Tamil, Thai
   

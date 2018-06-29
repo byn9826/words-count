@@ -18,7 +18,6 @@ function globalWordsSplit(text) {
 	words = words.replace(/[\uFF00-\uFFEF\u2000-\u206F]/g, '').trim();
 	//Split words by white space (For European languages)
 	words = words.split(' ');
-	
 	//Match latin, cyrillic, Malayalam letters and numbers
 	const common = "(\\d+)|[a-zA-Z\u00C0-\u00FF\u0100-\u017F\u0180-\u024F\u0250-\u02AF\u1E00-\u1EFF\u0400-\u04FF\u0500-\u052F\u0D00-\u0D7F]+|";
 	//Match Chinese Hànzì, the Japanese Kanji and the Korean Hanja
@@ -35,15 +34,15 @@ function globalWordsSplit(text) {
 		"g"
 	);
 	let final = [];
-	let carry;
+	let total = 0;
 	words.forEach(function(word) {
-		carry = [];
+		let carry = 0;
 		while (m = reg.exec(word)) { 
-			carry.push(m[0]) 
+			carry++;
 		}
-		carry.length === 0 ? final.push(word) : final = final.concat(carry);
+		total = carry === 0 ? total + 1 : total + carry;
 	});
-	return final.length;
+	return total;
 }
 
 module.exports = globalWordsSplit;
