@@ -1,6 +1,6 @@
 function globalWordsSplit(text) {
-	if (text === null || text === '') {
-		return [];
+	if (text === null || text === undefined || text.trim() === '') {
+		return 0;
 	}
 	//Format white space character
 	let words = text.replace(/\s+/, ' ');
