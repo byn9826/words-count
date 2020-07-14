@@ -1,9 +1,9 @@
 function globalWordsSplit(text) {
-	if (text === null || text === undefined || text.trim() === '') {
-		return 0;
-	}
+	if (!text) return 0;
+	var stringText = String(text);
+	if (stringText.trim() === '') return 0;
 	//Format white space character
-	let words = text.replace(/\s+/, ' ');
+	let words = stringText.replace(/\s+/, ' ');
 	//Remove normal punctuations
 	const punctuations = [
 		',', '，', '.', '。', ':', '：', ';', '；', '[', ']', '【', ']', '】', '{', '｛', '}', '｝',
