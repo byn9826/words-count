@@ -1,5 +1,5 @@
 # Words Count
-Words count for multi-languages paragraph mixed with numbers and punctuations.   
+Words count for multi-languages paragraph mixed with numbers and punctuation.   
 One rule apply to all.  
   
 [See Test Case](https://byn9826.github.io/words-count/)  
@@ -33,16 +33,26 @@ Special Rule
 --
 Numbers count as 1 word  
 
-Use Punctuation as Breaker
+Configs
 --
 ```
-const word = "Let'us";
-const defaultTotal = wordsCount(word);
+const words = "Some words ...";
+
+// Treat punctuation as word breaker
 const breakerTotal = wordsCount(word, {    
   punctuationAsBreaker: true
 });
-console.log(defaultTotal) --> 1
-console.log(breakerTotal) --> 2
+
+// Treat more characters as punctuation
+const breakerTotal = wordsCount(word, {    
+  punctuation: ['-', 'a', 'b']
+});
+
+// Disable default built-in punctuation list
+const breakerTotal = wordsCount(word, {    
+  disableDefaultPunctuation: true
+});
+
 ```
 
 Test Case

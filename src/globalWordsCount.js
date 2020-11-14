@@ -1,16 +1,20 @@
+const DEFAULT_PUNCTUATION = [
+	',', '，', '.', '。', ':', '：', ';', '；', '[', ']', '【', ']', '】', '{', '｛', '}', '｝',
+	'(', '（', ')', '）', '<', '《', '>', '》', '$', '￥', '!', '！', '?', '？', '~', '～',
+	"'", "’", '"', '“', '”', "'", "'",
+	'*', '/', '\\', '&', '%', '@', '#', '^', '、', '、', '、', '、'
+];
+
 function globalWordsSplit(text, config = {}) {
 	if (!text) return 0;
 	let words = String(text);
 	if (words.trim() === '') return 0;
 	const punctuationReplacer = config.punctuationAsBreaker ? ' ' : '';
-	const punctuations = [
-		',', '，', '.', '。', ':', '：', ';', '；', '[', ']', '【', ']', '】', '{', '｛', '}', '｝',
-		'(', '（', ')', '）', '<', '《', '>', '》', '$', '￥', '!', '！', '?', '？', '~', '～',
-		"'", "’", '"', '“', '”', "'", "'",
-		'*', '/', '\\', '&', '%', '@', '#', '^', '、', '、', '、', '、'
-	];
+	const defaultPunctuations = config.disableDefaultPunctuation ? [] : DEFAULT_PUNCTUATION;
+	const customizedPunctuations = config.punctuation || [];
+	const combinedPunctionations = defaultPunctuations.concat(customizedPunctuations);
 	// Remove punctuations or change to empty space
-	punctuations.forEach(function(punctuation) {
+	combinedPunctionations.forEach(function(punctuation) {
 		words = words.replace(punctuation, punctuationReplacer);	
 	});
 	// Remove all kind of symbols
@@ -36,7 +40,7 @@ function globalWordsSplit(text, config = {}) {
 	let total = 0;
 	words.forEach(function(word) {
 		let carry = 0;
-		while (m = reg.exec(word)) { 
+		while (m = reg.exec(word)) {
 			carry++;
 		}
 		total = carry === 0 ? total + 1 : total + carry;

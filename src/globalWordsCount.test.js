@@ -417,6 +417,68 @@ describe('Basic', function() {
         punctuationAsBreaker: true
       })).to.equal(18);
     });
+    it('Wipe out default punctuation list', function() {
+      const content = "Google's free service instantly translates words, phrases, and web pages between English and over 100 other languages.";
+      expect(wordsCount(content, {
+        disableDefaultPunctuation: true
+      })).to.equal(18);
+    });
+    it('Considering more simbol as punctuation', function() {
+      const content = "Google's free-service instantly translates words, phrases, and web pages between English and over 100 other languages.";
+      expect(wordsCount(content, {
+        punctuation: ['-']
+      })).to.equal(16);
+    });
+    it('Considering more simbol as punctuation 2', function() {
+      const content = "Googles free-service instantly translates words, phrases, and web pages between English and over 100 other languages.";
+      expect(wordsCount(content, {
+        punctuation: ['-']
+      })).to.equal(16);
+    });
+    it('Considering more simbol as punctuation as word breaker', function() {
+      const content = "Google's free-service instantly translates words, phrases, and web pages between English and over 100 other languages.";
+      expect(wordsCount(content, {
+        punctuation: ['-'],
+        punctuationAsBreaker: true
+      })).to.equal(18);
+    });
+    it('Considering more simbol as punctuation as word breaker 2', function() {
+      const content = "Googles free-service instantly translates words, phrases, and web pages between English and over 100 other languages.";
+      expect(wordsCount(content, {
+        punctuation: ['-'],
+        punctuationAsBreaker: true
+      })).to.equal(17);
+    });
+    it('Only use simbol provided as punctuation', function() {
+      const content = "Google's free-service instantly translates words, phrases, and web pages between English and over 100 other languages.";
+      expect(wordsCount(content, {
+        punctuation: ['-'],
+        disableDefaultPunctuation: true
+      })).to.equal(17);
+    });
+    it('Only use simbol provided as punctuation 2', function() {
+      const content = "Googles free-service instantly translates words, phrases, and web pages between English and over 100 other languages.";
+      expect(wordsCount(content, {
+        punctuation: ['-'],
+        disableDefaultPunctuation: true
+      })).to.equal(16);
+    });
+    it('Only use simbol provided as punctuation as word breaker', function() {
+      const content = "Google's free-service instantly translates words, phrases, and web pages between English and over 100 other languages.";
+      expect(wordsCount(content, {
+        punctuation: ['-'],
+        disableDefaultPunctuation: true,
+        punctuationAsBreaker: true
+      })).to.equal(18);
+    });
+    it('Only use simbol provided as punctuation as word breaker 2', function() {
+      const content = "Googles free-service instantly translates words, phrases, and web pages between English and over 100 other languages.";
+      expect(wordsCount(content, {
+        punctuation: ['-'],
+        disableDefaultPunctuation: true,
+        punctuationAsBreaker: true
+      })).to.equal(17);
+    });
   });
   
 }); 
