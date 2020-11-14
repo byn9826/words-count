@@ -39,17 +39,17 @@ Configs
 const words = "Some words ...";
 
 // Treat punctuation as word breaker
-const breakerTotal = wordsCount(word, {    
+const total = wordsCount(words, {    
   punctuationAsBreaker: true
 });
 
 // Treat more characters as punctuation
-const breakerTotal = wordsCount(word, {    
+const total = wordsCount(words, {    
   punctuation: ['-', 'a', 'b']
 });
 
 // Disable default built-in punctuation list
-const breakerTotal = wordsCount(word, {    
+const total = wordsCount(words, {    
   disableDefaultPunctuation: true
 });
 
