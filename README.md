@@ -13,10 +13,10 @@ npm i words-count
 Example
 --
 ```
-var wordsCount = require('words-count');  
+const wordsCount = require('words-count');  
 console.log(wordsCount('Hello World'));  
 ```
-  
+
 Why use this
 --
 words_to_be_count = 'Hello “世界”';  
@@ -31,11 +31,23 @@ Office Word -> 5
 
 Special Rule
 --
-1. Numbers count as 1 word  
-2. Words connected by '-' count as 2 words  
+Numbers count as 1 word  
+
+Use Punctuation as Breaker
+--
+```
+const word = "Let'us";
+const defaultTotal = wordsCount(word);
+const breakerTotal = wordsCount(word, {    
+  punctuationAsBreaker: true
+});
+console.log(defaultTotal) --> 1
+console.log(breakerTotal) --> 2
+```
 
 Test Case
 --
+Test case based on best assumption.  
 <b>Original Content:</b>  
 Google's free service instantly translates words, phrases, and web pages between English and over 100 other languages.  
 <b>Basic Test Content:</b>  

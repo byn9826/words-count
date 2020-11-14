@@ -1,6 +1,6 @@
 {
   "name": "words-count",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "./src/globalWordsCount.js",
   "scripts": {
     "test": "mocha ./src/globalWordsCount.test.js",

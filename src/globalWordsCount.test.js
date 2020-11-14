@@ -410,6 +410,14 @@ describe('Basic', function() {
     expect(wordsCount(content)).to.equal(23);
   });
   
+  describe('Config', function() {
+    it('Punctuation Breaker', function() {
+      const content = "Google's free service instantly translates words, phrases, and web pages between English and over 100 other languages.";
+      expect(wordsCount(content, {
+        punctuationAsBreaker: true
+      })).to.equal(18);
+    });
+  });
   
 }); 
 
