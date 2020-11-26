@@ -15,7 +15,7 @@ function globalWordsSplit(text, config = {}) {
 	const combinedPunctionations = defaultPunctuations.concat(customizedPunctuations);
 	// Remove punctuations or change to empty space
 	combinedPunctionations.forEach(function(punctuation) {
-		words = words.replace(punctuation, punctuationReplacer);	
+		words = words.replaceAll(punctuation, punctuationReplacer);	
 	});
 	// Remove all kind of symbols
 	words = words.replace(/[\uFF00-\uFFEF\u2000-\u206F]/g, '');
