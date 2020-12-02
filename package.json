@@ -1,8 +1,10 @@
 {
   "name": "words-count",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "./src/globalWordsCount.js",
   "scripts": {
+    "compile": "webpack --config webpack.config.js",
+    "release": "rm -rf ./dist && npm run compile && npm publish",
     "test": "mocha ./src/globalWordsCount.test.js",
     "report": "mocha ./src/globalWordsCount.test.js --reporter mochawesome --reporter-options reportDir=docs,reportFilename=index"
   },
@@ -17,9 +19,13 @@
     "url": "https://github.com/byn9826/words-count"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "babel-loader": "^8.2.2",
     "chai": "^4.1.2",
     "mocha": "^5.1.1",
-    "mochawesome": "^3.0.2"
+    "mochawesome": "^3.0.2",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0"
   },
   "bugs": {
     "url": "https://github.com/byn9826/words-count/issues"
