@@ -480,6 +480,29 @@ describe('Basic', function() {
       })).to.equal(17);
     });
   });
+
+  describe('Special', function() {
+    it('Same punctuation multiple times: apostrophe', function() {
+      const content = "Google's'home is a server.";
+      expect(wordsCount(content)).to.equal(4);
+    });
+    it('Same punctuation multiple times as breaker: apostrophe', function() {
+      const content = "Google's'home is a server.";
+      expect(wordsCount(content, {
+        punctuationAsBreaker: true
+      })).to.equal(6);
+    });
+    it('Same punctuation multiple times: colon', function() {
+      const content = "Google:s:home is a server.";
+      expect(wordsCount(content)).to.equal(4);
+    });
+    it('Same punctuation multiple times as breaker: colon', function() {
+      const content = "Google:s:home is a server.";
+      expect(wordsCount(content, {
+        punctuationAsBreaker: true
+      })).to.equal(6);
+    });
+  });
   
 }); 
 

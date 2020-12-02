@@ -57,7 +57,7 @@ const total = wordsCount(words, {
 
 Test Case
 --
-Test case based on best assumption.  
+Test cases are based on best assumption.  
 <b>Original Content:</b>  
 Google's free service instantly translates words, phrases, and web pages between English and over 100 other languages.  
 <b>Basic Test Content:</b>  
