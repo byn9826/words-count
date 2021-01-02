@@ -13,7 +13,9 @@ npm i words-count
 Example
 --
 ```
-const wordsCount = require('words-count');  
+import wordsCount from 'words-count';
+// const wordsCount = require('words-count').default;  
+
 console.log(wordsCount('Hello World'));  
 ```
 

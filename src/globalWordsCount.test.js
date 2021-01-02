@@ -1,9 +1,4 @@
 import { expect } from 'chai';
-// import wordsCount, {
-//   wordsCount as count,
-//   wordsSplit as split,
-//   wordsDetect as detect
-// } from './globalWordsCount.js';
 import wordsCount, {
   wordsCount as count,
   wordsSplit as split,
