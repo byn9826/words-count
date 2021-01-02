@@ -5,10 +5,15 @@ const DEFAULT_PUNCTUATION = [
 	'*', '/', '\\', '&', '%', '@', '#', '^', '、', '、', '、', '、'
 ];
 
-function globalWordsSplit(text, config = {}) {
-	if (!text) return 0;
+const EMPTY_RESULT = {
+	words: [],
+	count: 0
+}
+
+const wordsDetect = (text, config = {}) => {
+	if (!text) return EMPTY_RESULT;
 	let words = String(text);
-	if (words.trim() === '') return 0;
+	if (words.trim() === '') return EMPTY_RESULT;
 	const punctuationReplacer = config.punctuationAsBreaker ? ' ' : '';
 	const defaultPunctuations = config.disableDefaultPunctuation ? [] : DEFAULT_PUNCTUATION;
 	const customizedPunctuations = config.punctuation || [];
@@ -38,15 +43,39 @@ function globalWordsSplit(text, config = {}) {
 		common + '[' + cjk + jp + kr + ']',
 		'g'
 	);
-	let total = 0;
+	let detectedWords = [];
 	words.forEach(function(word) {
-		let carry = 0;
-		while (m = reg.exec(word)) {
-			carry++;
+		const carry = [];
+		let matched;
+		do {
+			matched = reg.exec(word);
+			if (matched) carry.push(matched[0])
+		} while (matched);
+		if (carry.length === 0) {
+			detectedWords.push(word);
+		} else {
+			detectedWords = detectedWords.concat(carry);
 		}
-		total = carry === 0 ? total + 1 : total + carry;
 	});
-	return total;
+	return {
+		words: detectedWords,
+		count: detectedWords.length
+	};
 }
 
-module.exports = globalWordsSplit;
+const wordsCount = (text, config = {}) => {
+	const { count } = wordsDetect(text, config);
+	return count;
+}
+
+const wordsSplit = (text, config = {}) => {
+	const { words } = wordsDetect(text, config);
+	return words;
+}
+
+export default wordsCount;
+export {
+	wordsCount,
+	wordsSplit,
+	wordsDetect
+};

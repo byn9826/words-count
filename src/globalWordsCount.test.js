@@ -1,5 +1,11 @@
-var wordsCount = require('./globalWordsCount.js');
-var expect = require('chai').expect;
+import { expect } from 'chai';
+import wordsCount, {
+  wordsCount as count,
+  wordsSplit as split,
+  wordsDetect as detect
+} from './globalWordsCount.js';
+
+const wordsIsExpected = (firstArr, secondArr) => firstArr.every((el, index) => secondArr[index] === el);
 
 describe('Simple', function() {
   it('English', function() {
@@ -503,7 +509,33 @@ describe('Basic', function() {
       })).to.equal(6);
     });
   });
-  
+
+  describe('Split and detector', function() {
+    it('English', function() {
+      const content = "Google's free service instantly translates words, phrases, and web pages between English and over 100 other languages.";
+      const splittedContent = [
+        'Googles', 'free', 'service', 'instantly', 'translates', 'words',
+        'phrases', 'and', 'web', 'pages', 'between', 'English', 'and',
+        'over', '100', 'other', 'languages'
+      ];
+      expect(count(content)).to.equal(17);
+      expect(wordsIsExpected(split(content), splittedContent)).to.equal(true);
+      const { words: detectedWords, count: detectedCount } = detect(content);
+      expect(detectedCount).to.equal(17);
+      expect(wordsIsExpected(detectedWords, splittedContent)).to.equal(true);
+    });
+    it('Chinese', function() {
+      const content = "Google的免费服务可即时翻译英文和其他100多种语言的文字，短语和网页。";
+      const splittedContent = [
+        'Google', '的', '免', '费', '服', '务', '可', '即', '时', '翻', '译',
+        '英', '文', '和', '其', '他', '100', '多', '种', '语', '言', '的',
+        '文', '字', '短', '语', '和', '网', '页'
+      ];
+      expect(count(content)).to.equal(29);
+      expect(wordsIsExpected(split(content), splittedContent)).to.equal(true);
+      const { words: detectedWords, count: detectedCount } = detect(content);
+      expect(detectedCount).to.equal(29);
+      expect(wordsIsExpected(detectedWords, splittedContent)).to.equal(true);
+    });
+  });
 }); 
-
-

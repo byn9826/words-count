@@ -52,7 +52,16 @@ const total = wordsCount(words, {
 const total = wordsCount(words, {    
   disableDefaultPunctuation: true
 });
+```
 
+Words Split
+--
+```
+const words = "Some words ...";
+const { wordsSplit, wordsDetect } = require('words-count');  
+
+const splittedWords = wordsSplit(words);
+const { words, count } = wordsDetect(words);
 ```
 
 Test Case
