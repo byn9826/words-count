@@ -1,9 +1,14 @@
 import { expect } from 'chai';
+// import wordsCount, {
+//   wordsCount as count,
+//   wordsSplit as split,
+//   wordsDetect as detect
+// } from './globalWordsCount.js';
 import wordsCount, {
   wordsCount as count,
   wordsSplit as split,
   wordsDetect as detect
-} from './globalWordsCount.js';
+} from '../dist/index.js';
 
 const wordsIsExpected = (firstArr, secondArr) => firstArr.every((el, index) => secondArr[index] === el);
 
